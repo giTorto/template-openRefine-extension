@@ -7,7 +7,9 @@ function init() {
         "project/scripts",
         module,
         [
-
+            "dialogs/about.js",
+            "dialogs/$commandName;format="camel"$.js",
+            "scripts/menus.js"
         ]
     );
     
@@ -16,7 +18,9 @@ function init() {
         "project/styles",
         module,
         [
-
+	    "dialogs/about.js",
+	    "dialogs/$commandName;format="camel"$.less",
+	    "styles/main.js"
         ]
     );
 }
