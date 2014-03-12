@@ -6,7 +6,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-public abstract class $commandName;format="Camel"$Command extends Command {
+public class $commandName;format="Camel"$Command extends Command {
 
     @Override
     public void doGet(final HttpServletRequest request, final HttpServletResponse response)
