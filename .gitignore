@@ -1,14 +1,15 @@
-<<<<<<< HEAD
 target/
 boot/
 lib_managed/
 src_managed/
 project/plugins/project/
-=======
+module/MOD-INF/classes
+
+*.idea
+*.project
 *.class
 
 # Package Files #
 *.jar
 *.war
 *.ear
->>>>>>> c9f5b4d0bcaa475b8702b7ef23ad35b40716012b
