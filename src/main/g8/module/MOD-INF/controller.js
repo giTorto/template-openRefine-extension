@@ -1,3 +1,8 @@
+var logger = Packages.org.slf4j.LoggerFactory.getLogger("$name;format="hyphen"$"),
+    refineServlet = Packages.com.google.refine.RefineServlet,
+    File = Packages.java.io.File,
+    refineServlet = Packages.com.google.refine.RefineServlet;
+
 function init() {
     var RS = Packages.com.google.refine.RefineServlet;
     RS.registerCommand(module,"$commandName;format="camel"$", new Packages.$package$.commands.$commandName;format="Camel"$Command);
@@ -8,8 +13,9 @@ function init() {
         module,
         [
             "dialogs/about.js",
-            "dialogs/$commandName;format="camel"$.js",
-            "scripts/menus.js"
+            "scripts/menus.js",
+	    "scripts/util.js",
+	    "scripts/config.js"
         ]
     );
     
@@ -18,9 +24,9 @@ function init() {
         "project/styles",
         module,
         [
-	    "dialogs/about.js",
-	    "dialogs/$commandName;format="camel"$.less",
-	    "styles/main.js"
+	    "dialogs/about.less",
+	    "styles/main.less",
+            "styles/dialog.less"
         ]
     );
 }
