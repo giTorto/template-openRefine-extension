@@ -22,7 +22,6 @@
 
     <property name="fullname" value="\${name}-\${version}-\${revision}" />
 
-    <!--<property name="refine.dir" value="/home/giulian/OpenRefine/main" />-->
     <property name="refine.dir" value="\${basedir}/../../main" />
     <property name="refine.webinf.dir" value="\${refine.dir}/webapp/WEB-INF" />
     <property name="refine.modinf.dir" value="\${refine.dir}/webapp/modules/core/MOD-INF" />
