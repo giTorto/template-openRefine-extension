@@ -1,11 +1,11 @@
 /* Add menu to extension bar */
 ExtensionBar.addExtensionMenu({
-	id : "$commandName;format="camel"$",
-	label : "$commandName$",
+	id : "$name;format="hyphen"$",
+	label : "$name$",
 	submenu : [
 	
 	{
-		id : $nome$+"/about",
+		id : "$name;format="hyphen"$/about",
 		label : "About...",
 		click:dialogHandler(AboutDialog)
 	} ]
@@ -14,9 +14,9 @@ ExtensionBar.addExtensionMenu({
 // Add submenu to column header menu 
 DataTableColumnHeaderUI.extendMenu(function(column, columnHeaderUI, menu) {
 	MenuSystem.appendTo(menu, "", [ { /* separator */}, {
-		id : "$commandName;format="Camel"$",
-		label : "$commandName$",
-		click:dialogHandler($commandName;format="Camel"$Dialog)
+		id : "$name;format="hyphen"$/about",
+		label : "$name$",
+		click:dialogHandler(AboutDialog)
 	} ]);
 });+
 

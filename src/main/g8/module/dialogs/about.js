@@ -3,9 +3,9 @@ function AboutDialog() {}
 AboutDialog.prototype = {
   init: function () { 
     var nomecomando ="$commandName;format="Camel"$"
-    this.dialogElement = \$(DOM.loadHTML(nomecomando, "dialogs/about.html"));
+    this.dialogElement = \$(DOM.loadHTML("$name;format="hyphen"$", "dialogs/about.html"));
     var controls = DOM.bind(this.dialogElement);
-    controls.close.click(this.bound("hide"));
+    controls.close.click(this.$commandName;format="norm"$("hide"));
   },
   
   show: function () {
